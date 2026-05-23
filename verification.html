@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Верификация СИМ — АБВСИМ</title>
+    <style>
+        /* Основные стили */
+        body {
+            font-family: 'Times New Roman', serif;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            max-width: 700px;
+            margin: 30px auto;
+            padding: 40px;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid #e0e0e0;
+        }
+
+        /* Декоративные элементы */
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #0056b3, #007bff, #0056b3);
+        }
+
+        /* Заголовок */
+        h1 {
+            color: #004085;
+            text-align: center;
+            margin-bottom: 5px;
+            font-size: 24px;
+            letter-spacing: 0.5px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #6c757d;
+            font-style: italic;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+
+        /* Статус */
+        .status-valid {
+            background: #d4edda;
+            color: #155724;
+            padding: 12px 20px;
+            border-radius: 6px;
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: bold;
+            border: 2px solid #c3e6cb;
+            font-size: 18px;
+        }
+
+        /* Блоки данных */
+        .data-group {
+            margin-bottom: 25px;
+        }
+
+        .label {
+            font-weight: bold;
+            color: #495057;
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .value {
+            color: #212529;
+            padding: 10px 15px;
+            background: #f8f9fa;
+            border-radius: 4px;
+            border-left: 3px solid #007bff;
+            font-size: 15px;
+        }
+
+        /* Разделители */
+        .divider {
+            border-top: 1px dashed #dee2e6;
+            margin: 25px 0;
+        }
+
+        /* История проверок */
+        .audit-history {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #ffc107;
+            margin-top: 20px;
+        }
+
+        .audit-item {
+            margin-bottom: 8px;
+            font-size: 13px;
+        }
+
+        /* Юридическая информация */
+        .legal-info {
+            background: #e9ecef;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 20px;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+
+        /* Футер */
+        .footer {
+            text-align: center;
+            color: #6c757d;
+            font-size: 11px;
+            margin-top: 35px;
+            padding-top: 20px;
+            border-top: 1px solid #dee2e6;
+        }
+
+        .footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Печать */
+        .seal {
+            text-align: center;
+            margin-top: 30px;
+            opacity: 0.8;
+        }
+
+        .seal-text {
+            display: inline-block;
+            width: 120px;
+            height: 120px;
+            border: 3px double #dc3545;
+            border-radius: 50%;
+            color: #dc3545;
+            font-weight: bold;
+            font-size: 10px;
+            line-height: 120px;
+            transform: rotate(-10deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Система цифровой верификации АБВСИМ</h1>
+        <p class="subtitle">Официальная страница проверки статуса регистрации средства индивидуальной мобильности</p>
+
+        <div class="status-valid">Статус: ДЕЙСТВИТЕЛЕН (подтверждено системой)</div>
+
+        <!-- Основные данные -->
+        <div class="data-group">
+            <div class="label">Регистрационный номер СИМ:</div>
+            <div class="value">СИМ‑АБВ‑00087</div>
+        </div>
+
+        <div class="data-group">
+            <div class="label">Марка и модель:</div>
+            <div class="value">AOVO M360 Pro</div>
+        </div>
+
+        <div class="data-group">
+            <div class="label">Серийный номер:</div>
+            <div class="value">[ожидает ввода]</div>
+        </div>
+
+        <div class="data-group">
+            <div class="label">ФИО владельца:</div>
+            <div class="value">Владыкина София Алексеевна</div>
+        </div>
+
+        <div class="data-group">
+            <div class="label">Дата регистрации:</div>
+            <div class="value">24.08.2025</div>
+        </div>
+
+        <div class="data-group">
+            <div class="label">Статус регистрации:</div>
+            <div class="value">Зарегистрирован, пройдена первичная верификация</div>
+        </div>
+
+        <!-- История проверок -->
+        <div class="divider"></div>
+
+        <div class="data-group">
+            <div class="label">История последних проверок:</div>
+            <div class="audit-history">
+                <div class="audit-item">23.05.2026, 14:22 — Успешно (IP: 192.168.1.100)</div>
+                <div class="audit-item">22.05.2026, 09:15 — Успешно (IP: 89.123.45.67)</div>
+                <div class="audit-item">21.05.2026, 18:41 — Успешно (IP: 212.34.56.78)</div>
+            </div>
+        </div>
+
+        <!-- Юридическая информация -->
+        <div class="divider"></div>
+
+        <div class="legal-info">
+            Документ выдан в соответствии с Федеральным законом № 196‑ФЗ «О безопасности дорожного движения»<br>
+            и Регламентом ЧОО «АБВСИМ» (ред. от 01.01.2025).<br>
+            Подделка данного документа влечёт ответственность по ст. 327 УК РФ.<br>
+            Данные актуальны на момент проверки.
+        </div>
+
+        <!-- Печать -->
+        <div class="seal">
+            <div class="seal-text">ОФИЦИАЛЬНО<br>АБВСИМ<br>2025</div>
+        </div>
+
+        <!-- Футер -->
+        <div class="footer">
+            © 2025 Частная образовательная организация «Академия безопасного вождения средств индивидуальной мобильности» (ЧОО «АБВСИМ»)<br>
+            ИНН: 6321456789 | ОГРН: 1126321001234<br>
+            Лицензия на обучение: №Л035-000123, срок действия до 31.12.2028<br>
+            Официальный сайт: <a href="https://abvsim.com" target="_blank">abvsim.com</a><br>
+            Контактный email: info@abvsim.com | Телефон: +7 (905) 306-67-45
+        </div>
+    </div>
+</body>
+</html>
